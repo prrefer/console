@@ -1,0 +1,3 @@
+module prrefer/console
+
+go 1.22.3
