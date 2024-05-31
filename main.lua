@@ -46,9 +46,6 @@ function console:print(text)
 	return self:fetch({
 		Url = self.url .. '/print',
 		Method = 'POST',
-		Headers = {
-			['Content-Type'] = 'text/plain'
-		},
 		Body = text
 	}).StatusCode
 end
@@ -57,9 +54,6 @@ function console:warn(text)
 	return self:fetch({
 		Url = self.url .. '/warn',
 		Method = 'POST',
-		Headers = {
-			['Content-Type'] = 'text/plain'
-		},
 		Body = text
 	}).StatusCode
 end
@@ -68,9 +62,6 @@ function console:error(text)
 	return self:fetch({
 		Url = self.url .. '/error',
 		Method = 'POST',
-		Headers = {
-			['Content-Type'] = 'text/plain'
-		},
 		Body = text
 	}).StatusCode
 end
@@ -86,9 +77,6 @@ function console:input(prompt)
 	return self:fetch({
 		Url = self.url .. '/input',
 		Method = 'POST',
-		Headers = {
-			['Content-Type'] = 'text/plain'
-		},
 		Body = prompt
 	}).Body
 end
@@ -97,9 +85,6 @@ function console:title(title)
 	return self:fetch({
 		Url = self.url .. '/title',
 		Method = 'POST',
-		Headers = {
-			['Content-Type'] = 'text/plain'
-		},
 		Body = title
 	}).StatusCode
 end
