@@ -24,7 +24,7 @@ console:error('error example')
 ```
 ### clear
 ```lua
-<number> console:lua(<void>)
+<number> console:clear(<void>)
 ```
 ### input
 ```lua
